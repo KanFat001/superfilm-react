@@ -1,0 +1,91 @@
+/* Additional styles specific to About page */
+.bg-amber-50 {
+  background-color: #fffbeb;
+}
+
+/* Custom button styles for navigation buttons */
+button.bg-transparent {
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+
+button.bg-transparent:hover {
+  color: #d1d5db; /* gray-300 */
+}
+
+/* Ensure proper aspect ratio for images */
+.aspect-\[4\/5\] {
+  aspect-ratio: 4 / 5;
+}
+
+/* Custom grid layout for hero section */
+@media (min-width: 1024px) {
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Custom text sizes for extra large screens */
+@media (min-width: 1280px) {
+  .xl\:text-9xl {
+    font-size: 8rem;
+    line-height: 1;
+  }
+
+  .xl\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+}
+
+/* Custom leading for tight line height */
+.leading-\[0\.9\] {
+  line-height: 0.9;
+}
+
+/* Ensure proper spacing for mobile hero */
+@media (max-width: 1023px) {
+  .grid-cols-1 > div:first-child {
+    order: 2;
+  }
+
+  .grid-cols-1 > div:last-child {
+    order: 1;
+  }
+}
+
+/* Custom shadow for images */
+.shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Smooth transitions for all interactive elements */
+button,
+a {
+  transition: all 0.3s ease;
+}
+
+/* Focus styles for accessibility */
+button:focus,
+a:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+/* Custom spacing for sections */
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 1024px) {
+  .lg\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
